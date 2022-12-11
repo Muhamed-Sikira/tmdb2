@@ -1,0 +1,25 @@
+<div class="detail-wrapper">
+  <div class="detail-back">
+    <button class="detail-button" (click)="onBack()">Back</button>
+  </div>
+  <div class="show-info">
+    <div class="movie-img">
+      <img
+        src="https://image.tmdb.org/t/p/original{{
+          getShowDetailResults.backdrop_path
+        }}"
+        alt=""
+        class="show-image"
+      />
+    </div>
+    <div class="show-description">
+      <div class="movie-title">
+        <h3>{{ getShowDetailResults.original_name }}</h3>
+      </div>
+      <div class="show-paragraph">
+        <p class="show-overview">Show Overview</p>
+        <p class="show-Mainoverview">{{ getShowDetailResults.overview }}</p>
+      </div>
+    </div>
+  </div>
+</div>
